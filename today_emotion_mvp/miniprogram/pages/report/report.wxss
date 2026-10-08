@@ -1,0 +1,17 @@
+.top {
+  padding: 20rpx 8rpx 40rpx;
+}
+.small { color: #888; font-size: 26rpx; }
+.main-emotion { font-size: 80rpx; margin: 28rpx 0 14rpx; }
+.intensity { color: #777; font-size: 28rpx; }
+
+.section-title { font-size: 30rpx; font-weight: 600; margin-bottom: 24rpx; }
+.tags { display: flex; flex-wrap: wrap; gap: 16rpx; }
+.tag {
+  background: #F1EEE7;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+}
+.body { font-size: 30rpx; line-height: 1.8; color: #555; }
+.history-link { text-align: center; margin-top: 38rpx; color: #777; }

@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/report/report",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarTitleText": "今天的情绪",
+    "navigationBarBackgroundColor": "#F7F4EE",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F7F4EE"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

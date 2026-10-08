@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="header">
+    <view class="title">今天过得怎么样？</view>
+    <view class="subtitle">给今天的自己留一点时间。</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">今天的感觉</view>
+    <view class="emotion-row">
+      <view
+        wx:for="{{emotions}}"
+        wx:key="emoji"
+        class="emotion-item {{selected === index ? 'selected' : ''}}"
+        bindtap="chooseEmotion"
+        data-index="{{index}}"
+      >
+        <view class="emoji">{{item.emoji}}</view>
+        <view>{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">今天发生了什么？</view>
+    <textarea
+      class="textarea"
+      maxlength="5000"
+      placeholder="不用想怎么写，想到什么就写什么……"
+      value="{{content}}"
+      bindinput="onInput"
+    />
+    <view class="hint">你的记录会用于生成今日情绪报告。</view>
+  </view>
+
+  <button class="primary-btn" loading="{{loading}}" bindtap="submit">
+    ✨ 让 AI 听听今天的你
+  </button>
+
+  <view class="history-link" bindtap="goHistory">查看我的情绪记录 →</view>
+</view>

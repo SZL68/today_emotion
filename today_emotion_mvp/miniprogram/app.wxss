@@ -1,0 +1,28 @@
+page {
+  background: #F7F4EE;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  padding: 48rpx 36rpx;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 28rpx;
+  padding: 32rpx;
+  margin-bottom: 28rpx;
+  box-shadow: 0 8rpx 30rpx rgba(0,0,0,0.04);
+}
+
+.primary-btn {
+  background: #333333;
+  color: #FFFFFF;
+  border-radius: 50rpx;
+}
+
+.muted {
+  color: #999999;
+  font-size: 26rpx;
+}

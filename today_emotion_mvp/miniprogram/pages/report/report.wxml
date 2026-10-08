@@ -1,0 +1,27 @@
+<view class="container" wx:if="{{report}}">
+  <view class="top">
+    <view class="small">🌙 今日情绪报告</view>
+    <view class="main-emotion">{{report.emotion}}</view>
+    <view class="intensity">情绪强度 {{report.intensity}} / 100</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">今天的情绪</view>
+    <view class="tags">
+      <text class="tag" wx:for="{{report.tags}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">💭 AI听见了</view>
+    <view class="body">{{report.summary}}</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">🌱 给今天的你</view>
+    <view class="body">{{report.advice}}</view>
+  </view>
+
+  <button class="primary-btn" bindtap="backHome">记录下一天</button>
+  <view class="history-link" bindtap="goHistory">看看过去的自己 →</view>
+</view>
